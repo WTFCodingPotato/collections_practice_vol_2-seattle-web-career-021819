@@ -38,7 +38,7 @@ def count_elements(array)
   array.each do |element|
     element[:count] = 0
     name = element[:name]
-    aray.each do |next_element|
+    array.each do |next_element|
       if next_element[:name] == name
         element[:count] +=1
       end

@@ -26,6 +26,8 @@ def first_wa(array)
   array.each do |element|
     if element.include?("wa")
       return element
+    end
+  end
 end
 
 def remove_non_strings(array)

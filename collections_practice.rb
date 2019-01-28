@@ -57,9 +57,9 @@ end
 
 def find_cool (cool)
   cool_one = []
-  cool.each do |hash|
-    if hash[:temperature] == "cool"
-      cool_one << hash
+  cool.each do |person|
+    if person[:temperature] == "cool"
+      cool_one << person
     end
   end
   cool_one

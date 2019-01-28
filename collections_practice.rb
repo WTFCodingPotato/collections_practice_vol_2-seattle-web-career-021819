@@ -66,5 +66,13 @@ def find_cool (cool)
 end
 
 def organize_schools(schools)
-
+  sorted_schools = {}
+  schools.each do |school, location|
+    location.each do |city, data|
+      if sorted_schools[data]
+        sorted_schools[v] << school
+      end
+    end
+  end
+  sorted_schools
 end

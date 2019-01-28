@@ -23,15 +23,9 @@ def begins_with_r(array)
 end
 
 def first_wa(array)
-  i = 0
-  result = ""
-  while i < array.count
-    if array[i].include?("wa")
-      result = array[i]
-    end
-    i += 1
-  end
-  result
+  array.each do |element|
+    if element.include?("wa")
+      return element
 end
 
 def remove_non_strings(array)

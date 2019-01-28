@@ -37,7 +37,7 @@ end
 def count_elements(array)
     new_hash = Hash.new(0)
     array.each do |element|
-      Hash.new(0)[element] += 1
+      new_hash[element][:count] += 1
     end
     new_hash
 end

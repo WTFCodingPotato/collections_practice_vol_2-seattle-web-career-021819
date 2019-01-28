@@ -35,14 +35,5 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  i = 0
-  repeats = 0
-  name = "blake"
-  while i < array.count
-    if array[i] == name
-      repeats += 1
-    end
-    i += 1
-  end
-  repeats
+    array.each_with_object(Hash.new(0)) {|word, counts| counts[word] += 1}
 end

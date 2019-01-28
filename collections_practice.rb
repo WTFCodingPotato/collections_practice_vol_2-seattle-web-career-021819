@@ -47,5 +47,10 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-
+  new_array = []
+  keys.each do |x|
+    name = x[:first_name]
+    new_array << x.merge(data[0][name])
+  end
+  new_array
 end

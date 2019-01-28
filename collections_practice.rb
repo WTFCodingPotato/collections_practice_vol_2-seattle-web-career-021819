@@ -70,7 +70,7 @@ def organize_schools(schools)
   schools.each do |school, location|
     location.each do |city, data|
       if sorted_schools[data]
-        sorted_schools[v] << school
+        sorted_schools[data] << school
       end
     end
   end

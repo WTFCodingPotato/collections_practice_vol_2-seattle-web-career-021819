@@ -71,6 +71,9 @@ def organize_schools(schools)
     location.each do |city, data|
       if sorted_schools[data]
         sorted_schools[data] << school
+      else
+        sorted_schools[data] = []
+        sorted_schools[data] << school
       end
     end
   end

@@ -59,8 +59,7 @@ def find_cool (cool)
   cool_one = []
   cool.each do |person|
     if person[:tempurature] == "cool"
-      cool_one << person
+      return person
     end
   end
-  cool_one
 end
